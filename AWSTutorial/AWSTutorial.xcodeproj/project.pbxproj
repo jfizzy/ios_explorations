@@ -20,6 +20,9 @@
 		091E035520227D1E0054ACBE /* Pods_AWSTutorialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091E035620227D1E0054ACBE /* Pods_AWSTutorialTests.framework */; };
 		091E035720227D230054ACBE /* Pods_AWSTutorialUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091E035820227D230054ACBE /* Pods_AWSTutorialUITests.framework */; };
 		091E035A20227D470054ACBE /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 091E035920227D470054ACBE /* awsconfiguration.json */; };
+		091E035B20227F370054ACBE /* AWSPinpoint.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091E035C20227F370054ACBE /* AWSPinpoint.framework */; };
+		312B45E8ADC5C3B6889A1A0E /* Pods_AWSTutorialUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091E035820227D230054ACBE /* Pods_AWSTutorialUITests.framework */; };
+		522958AA155D798865DEFE27 /* Pods_AWSTutorialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 091E035620227D1E0054ACBE /* Pods_AWSTutorialTests.framework */; };
 		77EB474F592241DE4F4AA085 /* Pods_AWSTutorialUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EF9CFEDF9010FE1D62F7635 /* Pods_AWSTutorialUITests.framework */; };
 		918E52007A26C284C687718F /* Pods_AWSTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16CD7F1DE032B6AE099BE1A0 /* Pods_AWSTutorial.framework */; };
 		D69AFE6165E88D5239C5AEC0 /* Pods_AWSTutorialTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474374363FCA9F377E7EF804 /* Pods_AWSTutorialTests.framework */; };
@@ -62,6 +65,7 @@
 		091E035620227D1E0054ACBE /* Pods_AWSTutorialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_AWSTutorialTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		091E035820227D230054ACBE /* Pods_AWSTutorialUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_AWSTutorialUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		091E035920227D470054ACBE /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = awsconfiguration.json; path = AWSTutorial/awsconfiguration.json; sourceTree = "<group>"; };
+		091E035C20227F370054ACBE /* AWSPinpoint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AWSPinpoint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16C8072384C56B42D983766D /* Pods-AWSTutorialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSTutorialTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AWSTutorialTests/Pods-AWSTutorialTests.release.xcconfig"; sourceTree = "<group>"; };
 		16CD7F1DE032B6AE099BE1A0 /* Pods_AWSTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWSTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EF9CFEDF9010FE1D62F7635 /* Pods_AWSTutorialUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWSTutorialUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				091E035B20227F370054ACBE /* AWSPinpoint.framework in Frameworks */,
 				091E035720227D230054ACBE /* Pods_AWSTutorialUITests.framework in Frameworks */,
 				091E035520227D1E0054ACBE /* Pods_AWSTutorialTests.framework in Frameworks */,
 				091E035320227D180054ACBE /* AWSMobileClient.framework in Frameworks */,
@@ -92,6 +97,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D69AFE6165E88D5239C5AEC0 /* Pods_AWSTutorialTests.framework in Frameworks */,
+				522958AA155D798865DEFE27 /* Pods_AWSTutorialTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +106,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77EB474F592241DE4F4AA085 /* Pods_AWSTutorialUITests.framework in Frameworks */,
+				312B45E8ADC5C3B6889A1A0E /* Pods_AWSTutorialUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +170,7 @@
 		1339004E7F487C8AC038BC99 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				091E035C20227F370054ACBE /* AWSPinpoint.framework */,
 				091E035820227D230054ACBE /* Pods_AWSTutorialUITests.framework */,
 				091E035620227D1E0054ACBE /* Pods_AWSTutorialTests.framework */,
 				091E035420227D180054ACBE /* AWSMobileClient.framework */,
@@ -467,12 +475,14 @@
 				"${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework",
 				"${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework",
+				"${BUILT_PRODUCTS_DIR}/AWSPinpoint/AWSPinpoint.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSAuthCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSMobileClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSPinpoint.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
