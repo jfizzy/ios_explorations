@@ -8,7 +8,12 @@
 *.lock
 profile
 
+# xcode user settings
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
 
+# AWS config file
+awsconfiguration.json
 
 ## Build generated
 build/
