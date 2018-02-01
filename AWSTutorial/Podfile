@@ -6,6 +6,8 @@ target 'AWSTutorial' do
   use_frameworks!
   pod 'AWSMobileClient'
   pod 'AWSPinpoint'  
+  pod 'AWSUserPoolsSignIn'
+  pod 'AWSAuthUI'
 
   target 'AWSTutorialTests' do
     inherit! :search_paths
