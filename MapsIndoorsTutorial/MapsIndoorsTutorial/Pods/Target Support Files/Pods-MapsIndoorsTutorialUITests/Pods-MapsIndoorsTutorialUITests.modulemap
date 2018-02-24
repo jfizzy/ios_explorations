@@ -1,0 +1,6 @@
+framework module Pods_MapsIndoorsTutorialUITests {
+  umbrella header "Pods-MapsIndoorsTutorialUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

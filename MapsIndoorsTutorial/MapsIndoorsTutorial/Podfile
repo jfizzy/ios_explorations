@@ -1,0 +1,13 @@
+platform :ios, '9.0'
+target 'MapsIndoorsTutorial' do
+	use_frameworks!
+	pod 'MapsIndoors'
+
+	target 'MapsIndoorsTutorialTests' do
+    		inherit! :search_paths
+	end
+
+  	target 'MapsIndoorsTutorialUITests' do
+    		inherit! :search_paths
+  	end
+end
